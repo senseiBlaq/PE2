@@ -9,3 +9,5 @@
 # to run files make sure the the desired tab file is selected
 
 # sys.patth is a default list of strings that specfied the search path for modules/ The first string is the dir containing the script being run
+
+#coding with mosh py file has solutions for exercises from programming with Mosh 
