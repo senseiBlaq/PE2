@@ -8,6 +8,7 @@ print ('Your weight in kilogram is ', weight_kg)
 
 #Exercise 4 
 #Price of a house is $1M. If buyer has good credit, they need to put down 10%Otherwisethey need to put down 20%
+
 price_house = 1000000
 credit_score = True
 
@@ -19,3 +20,16 @@ else :
 print(f'your down paymentis{down_payment}')
 
 print ('End of program')
+
+#Exercise 5
+# check character limit of a name in
+
+name = input("Please enter your name : ")
+
+if len(name) < 3:
+    print ("name must be at least 3 characterrs long")
+elif len(name) > 50:
+    print ("name can be a maximum of 50 characters")
+else: 
+    print ("name looks good")
+print("End of program")
