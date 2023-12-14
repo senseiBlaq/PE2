@@ -8,7 +8,6 @@ print ('Your weight in kilogram is ', weight_kg)
 
 #Exercise 4 
 #Price of a house is $1M. If buyer has good credit, they need to put down 10%Otherwisethey need to put down 20%
-
 price_house = 1000000
 credit_score = True
 
@@ -18,7 +17,6 @@ else :
     down_payment = price * 0.20
 
 print(f'your down paymentis{down_payment}')
-
 print ('End of program')
 
 #Exercise 5
@@ -33,3 +31,61 @@ elif len(name) > 50:
 else: 
     print ("name looks good")
 print("End of program")
+
+#Exercise 5 
+#Weight converter
+weight = int (input ('Enter your weight:'))
+unit = input ('(L)bs or (K)g:')
+
+if unit.casefold() == "l":
+    weight /= 2.205
+    print (f'You are {round(weight)} kilograms')
+elif unit.casefold() == "k":
+    weight *= 2.20462
+    print (f'You are {round(weight)} pounds')
+else:
+    print ("invalid input")
+print ("End of program")
+
+#Exercise 5
+key = 9
+guess_count = 0
+guess_limit = 3
+
+while guess_count < guess_limit:
+    guess = int(input('Guess: '))
+    guess_count += 1
+    
+    if guess == key:
+        print('You\'ve won !!')
+        break
+else:
+    print('Sorry you\'ve failed !!')
+
+#Car Game
+user_input = ''
+end_game ='quit'
+check_started = False
+
+while True:
+    user_input = input('>').lower()
+    if user_input == "help":
+        print('start - to start the car\nstop - to stop the car\nquit - to exit')
+    elif user_input == 'start':
+        if not check_started:
+            check_started = True
+            print('Car is started and ready to go!')
+        else:
+            print('Car is already running!')
+    elif user_input == 'stop':
+        if check_started:
+            check_started = False
+            print('Car stop.')
+        else:
+            print('Car is already off!')
+    elif user_input == 'quit':
+        break
+    else:
+        print('I don\'t understand that... ')
+
+print('End of progam!!')
