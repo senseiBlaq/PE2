@@ -89,3 +89,26 @@ while True:
         print('I don\'t understand that... ')
 
 print('End of progam!!')
+
+#add items in a cart 
+kart = [20,10,100, 29.99,19.99]
+total_cost = 0
+for items in kart :
+    total_cost += items
+print (f'£{total_cost}')
+print('End of progam!!')
+
+#Draw alphabet 
+numbers = [2, 2, 2, 2, 5]
+
+for element in numbers:
+    print ('x' * element)
+print('\n')    
+#solution 2
+for element in numbers:
+    output = ''
+    for x in range(element):
+        output += 'x'
+    print(output)
+
+
