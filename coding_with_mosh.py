@@ -111,4 +111,80 @@ for element in numbers:
         output += 'x'
     print(output)
 
+#find amnd remove duplicate methods in a list 
+numbers = [2, 2, 4, 6, 3, 4, 6, 1]
 
+for item in numbers:
+    dup_num = numbers.count(item)
+    if dup_num > 1:
+        dup_num_pos = numbers.index(item)
+        numbers.pop(dup_num_pos)
+print (numbers)
+print('End of program !')
+soln 2
+numbers = [2, 2, 4, 6, 3, 4, 6, 1]
+num_clean = []
+
+for number in numbers:
+    if number not in num_clean:
+        num_clean.append(number)
+        
+print(num_clean)
+
+print('End of program')
+
+#phone numbers to words 
+phone_number = input('Phone: ')
+number_spellings = {
+    '0': 'zero ',
+    '1': 'one ',
+    '2': 'two ',
+    '3': 'three ',
+    '4': 'four ',
+    '5': 'five ',
+    '6': 'six ',
+    '7': 'seven ',
+    '8': 'eight ',
+    '9': 'nine ',
+    '10': 'ten '
+}
+phon_num_spl =''
+
+for digit in phone_number:
+    phon_num_spl += number_spellings.get(digit)
+print(phon_num_spl)
+
+print('End of program')
+
+#symbols tp emojis
+msg = input('>')
+emoji_dict = {
+    ':-)': '😊',
+    '<3': '❤️',
+    ';-)': '😉',
+    ':thumbsup:': '👍',
+    ':star:': '⭐',
+    ':coffee:': '☕',
+    ':hearteyes:': '😍',
+    ':sad:': '😢',
+    ':smile:': '😄',
+    ':fire:': '🔥',
+    ':rocket:': '🚀',
+    ':pencil:': '✏️',
+    ':book:': '📖',
+    ':computer:': '💻',
+    ':phone:': '📱',
+    ':sun:': '☀️',
+    ':moon:': '🌙',
+}
+
+msg_lst= msg.split(' ')
+for word in msg_lst:
+    if word in emoji_dict:
+        pos_word = msg_lst.index(word)
+        msg_lst[pos_word] = emoji_dict[word]
+        
+new_msg = ' '.join(msg_lst)
+print(new_msg)
+
+print('End of program')
