@@ -185,3 +185,21 @@ for word in msg_lst:
 print(new_msg)
 
 print('End of program')
+
+#Basic CLass structure
+import random 
+
+
+class Dice:
+    def __init__ (self):
+        pass
+    
+    def roll (self):
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+        return first, second
+        
+
+dice1 = Dice()
+print(dice1.roll())
+print('End of progam')
