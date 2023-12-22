@@ -178,13 +178,10 @@ emoji_dict = {
     ':moon:': '🌙',
 }
 
+new_msg = ''
 msg_lst= msg.split(' ')
 for word in msg_lst:
-    if word in emoji_dict:
-        pos_word = msg_lst.index(word)
-        msg_lst[pos_word] = emoji_dict[word]
-        
-new_msg = ' '.join(msg_lst)
+    new_msg += emoji_dict.get(word,word) + ' '
 print(new_msg)
 
 print('End of program')
