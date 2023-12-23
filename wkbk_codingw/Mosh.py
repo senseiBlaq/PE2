@@ -1,12 +1,11 @@
 # Exercise 3
-#Ask user's weight in pounds and convert to KG 
-name = input ('Hi there, whats your name
-? ')
+#Ask user's weight in pounds and convert to KG
+name = input ('Hi there, whats your name? ')
 weight= int(input ('Nice to meet you ' + name + '. Tell me your weight in pounds and il'll convert it to kilograms. '))
 weight_kg = weight / 2.205
 print ('Your weight in kilogram is ', weight_kg)
 
-#Exercise 4 
+#Exercise 4
 #Price of a house is $1M. If buyer has good credit, they need to put down 10%Otherwisethey need to put down 20%
 price_house = 1000000
 credit_score = True
@@ -28,11 +27,11 @@ if len(name) < 3:
     print ("name must be at least 3 characterrs long")
 elif len(name) > 50:
     print ("name can be a maximum of 50 characters")
-else: 
+else:
     print ("name looks good")
 print("End of program")
 
-#Exercise 5 
+#Exercise 5
 #Weight converter
 weight = int (input ('Enter your weight:'))
 unit = input ('(L)bs or (K)g:')
@@ -55,7 +54,7 @@ guess_limit = 3
 while guess_count < guess_limit:
     guess = int(input('Guess: '))
     guess_count += 1
-    
+
     if guess == key:
         print('You\'ve won !!')
         break
@@ -90,7 +89,7 @@ while True:
 
 print('End of progam!!')
 
-#add items in a cart 
+#add items in a cart
 kart = [20,10,100, 29.99,19.99]
 total_cost = 0
 for items in kart :
@@ -98,12 +97,12 @@ for items in kart :
 print (f'£{total_cost}')
 print('End of progam!!')
 
-#Draw alphabet 
+#Draw alphabet
 numbers = [2, 2, 2, 2, 5]
 
 for element in numbers:
     print ('x' * element)
-print('\n')    
+print('\n')
 #solution 2
 for element in numbers:
     output = ''
@@ -111,7 +110,7 @@ for element in numbers:
         output += 'x'
     print(output)
 
-#find amnd remove duplicate methods in a list 
+#find amnd remove duplicate methods in a list
 numbers = [2, 2, 4, 6, 3, 4, 6, 1]
 
 for item in numbers:
@@ -128,12 +127,12 @@ num_clean = []
 for number in numbers:
     if number not in num_clean:
         num_clean.append(number)
-        
+
 print(num_clean)
 
 print('End of program')
 
-#phone numbers to words 
+#phone numbers to words
 phone_number = input('Phone: ')
 number_spellings = {
     '0': 'zero ',
@@ -187,18 +186,18 @@ print(new_msg)
 print('End of program')
 
 #Basic CLass structure
-import random 
+import random
 
 
 class Dice:
     def __init__ (self):
         pass
-    
+
     def roll (self):
         first = random.randint(1, 6)
         second = random.randint(1, 6)
         return first, second
-        
+
 
 dice1 = Dice()
 print(dice1.roll())
